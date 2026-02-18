@@ -1,0 +1,2 @@
+# Sections
+Lo mejor va a ser que cada sección (section) tenga su propio componente, para hacer más legible la página principal. Seguramente haya un css que le de estilos a todas las secciones y después cada uno tendrá sus estilos personalizados.
