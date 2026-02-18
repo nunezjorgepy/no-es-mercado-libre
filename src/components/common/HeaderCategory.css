@@ -1,0 +1,25 @@
+.header-category{
+    position: relative;
+}
+.header-category span{
+    font-size: 14px;
+    color: var(--neutral-070);
+}
+.header-category i{
+    font-size: 12px;
+    margin-left: 5px;
+}
+.free-span{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    bottom: 90%;
+    right: 0;
+    height: 14px;
+    transform: translateX(-50%);
+    font-size: 8px !important;
+    background-color: var(--succes-color);
+    padding: 1px 5px;
+    border-radius: 7px;
+    color: var(--white-full) !important;
+}

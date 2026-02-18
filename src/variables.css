@@ -1,0 +1,72 @@
+:root {
+  /* 
+  ================================================================
+  Colores 
+  ================================================================
+  */
+  --primary-color: #ffe600;
+  --succes-color: #00a650;
+
+  /* Blancos */
+  --white-full: #ffffff;
+  --white-default: #f6f6f6;
+  --white-hover: #f2f2f2;
+  --white-active: #e6e6e6;
+
+  /* Loud color (or blue) */
+  --loud-color-default: #3483fa;
+  --loud-color-hover: #2968c8;
+  --loud-color-active: #1e4e96;
+
+  /* Escala de grises */
+  --neutral-005: rgba(0, 0, 0, 0.05);
+  --neutral-010: rgba(0, 0, 0, 0.1);
+  --neutral-020: rgba(0, 0, 0, 0.2);
+  --neutral-030: rgba(0, 0, 0, 0.3);
+  --neutral-040: rgba(0, 0, 0, 0.4);
+  --neutral-050: rgba(0, 0, 0, 0.5);
+  --neutral-060: rgba(0, 0, 0, 0.6);
+  --neutral-075: rgba(0, 0, 0, 0.7);
+  --neutral-080: rgba(0, 0, 0, 0.8);
+  --neutral-090: rgba(0, 0, 0, 0.9);
+  --neutral-100: #000000;
+
+  /* Fuentes */
+  --font-color-primary: var(--neutral-090);
+  --font-color-secondary: var(var(--white-default));
+  --font-color-tertiary: var(var(--loud-color-default));
+
+  /* Botones */
+  --primary-btn-main-color: var(--loud-color-default);
+  --primary-btn-hover-color: var(--loud-color-hover);
+  --primary-btn-active-color: var(--loud-color-active);
+
+  /* 
+  ================================================================
+  Font sizes 
+  ================================================================
+  */
+  --main-title-size: 2.5rem;
+  --secondary-title-size: 1.5rem;
+  --paragraph-size: 1rem;
+
+  /* 
+  ================================================================
+  Widths and heights 
+  ================================================================
+  */
+  /* Widths */
+  --max-width: 1200px;
+
+  /* Heights */
+  --header-height: 100px;
+
+
+  /* 
+  ================================================================
+  Paddings and Margins 
+  ================================================================
+  */
+
+
+}
