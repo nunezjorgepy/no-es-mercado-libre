@@ -48,7 +48,7 @@ function HeaderComponent() {
 
                     {/* Categories */}
                     <div className="header-categories">
-                        <HeaderCategory category="Categorías" icon="bi bi-chevron-down" />
+                        <HeaderCategory category="Categorías" icon="bi bi-chevron-down"/>
                         <HeaderCategory category="Ofertas" />
                         <HeaderCategory category="Cupones" />
                         <HeaderCategory category="Supermercado" />
@@ -60,21 +60,32 @@ function HeaderComponent() {
 
                     {/* Header Options */}
                     <div className="header-options">
-                        <Link to={'/'}>
-                            <HeaderCategory category="Creá tu cuenta" />
-                        </Link>
-                        <Link to={'/'}>
-                            <HeaderCategory category="Ingresá" />
-                        </Link>
-                        <Link to={'/'}>
-                            <HeaderCategory category="Mis Compras" />
-                        </Link>
+                        <HeaderCategory category="Creá tu cuenta" />
+                        <HeaderCategory category="Ingresá" />
+                        <HeaderCategory category="Mis Compras" />
                         <Link className="option-icon" to={'/'}>
                             <i className="bi bi-cart2 header-cart"></i>
                         </Link>
                     </div>
 
+
                 </header>
+            </div>
+            <div className="links">
+                {/* TODO: este elemento esta para poder navegar entre páginas mientras no existan links directos. Una vez creados, este elemento se tiene que borrar */}
+                <span>BORRAR</span>
+                <Link to={'/'}>Home</Link>
+                <Link to={'/profile'}>Perfil</Link>
+                <Link to={'/search'}>Búsqueda</Link>
+                <Link to={'/product'}>Producto</Link>
+                <Link to={'/cart'}>Carrito</Link>
+                <Link to={'/history'}>Historial</Link>
+                <Link to={'/questions'}>Preguntas</Link>
+                <Link to={'/opinions'}>Opiniones</Link>
+                <Link to={'/favorites'}>Favoritos</Link>
+                <Link to={'/sale'}>Vender</Link>
+                <Link to={'/buy'}>Comprar</Link>
+                <Link to={'/edit_info'}>Editar Perfil</Link>
             </div>
         </div>
     )

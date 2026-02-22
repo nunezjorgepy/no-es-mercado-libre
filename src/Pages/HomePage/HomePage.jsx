@@ -9,14 +9,14 @@ function HomePage() {
                 {/* Hero */}
                 <section className="section hero">
                     {/* Esta sección se divide en dos: Carrusel y Opciones. LA primera por ahora no la voy a hacer porque requiere un poco más de conocimiento de css o js. */}
-                    <div className="hero-options">
-
+                    <div className="hero-options-container max-width">
+                        
                     </div>
                 </section>
 
                 {/* Payment methods */}
                 <section className="section payment-section">
-                    <div className="payment-methods-container">
+                    <div className="payment-methods-container max-width">
 
                     </div>
                 </section>
@@ -24,26 +24,28 @@ function HomePage() {
                 {/* On Sales */}
                 <section className="section offers-section">
                     {/* Contiene dos secciones en forma horizontal. La primera muestra la oferta del día y es aproximadamente la mitad de la segunda, que muestra ofertas varias. */}
-                    <div className="day-offer"></div>
-                    <div className="best-offers"></div>
+                    <div className="offers-container max-width">
+                        <div className="day-offer"></div>
+                        <div className="best-offers"></div>
+                    </div>
 
                 </section>
 
                 {/* Meli+ */}
                 <section className="section meli-plus-section">
-                    <div className="meli-plus">
+                    <div className="meli-plus-container max-width">
 
                     </div>
                 </section>
 
                 {/* More solds */}
                 <section className="section best-sales-section">
-                    <div className="best-sales"></div>
+                    <div className="best-sales-container max-width"></div>
                 </section>
 
                 {/* Categories */}
                 <section className="section categories-section">
-                    <div className="categories">
+                    <div className="categories-container max-width">
 
                     </div>
                 </section>

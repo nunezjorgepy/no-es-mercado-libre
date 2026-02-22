@@ -1,6 +1,7 @@
 import './HeaderCategory.css'
 function HeaderCategory(props) {
     const { category, icon, span } = props
+    /* TODO: add links when neccesary */
     return (
         <>
             <div className="header-category">
