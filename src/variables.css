@@ -14,6 +14,9 @@
   --white-active: #e6e6e6;
 
   /* Loud color (or blue) */
+  --loud-color-light-15: #4189e626;
+  --loud-color-light-20: #4189e633;
+  --loud-color-light-30: #4189e64d;
   --loud-color-default: #3483fa;
   --loud-color-hover: #2968c8;
   --loud-color-active: #1e4e96;
@@ -41,6 +44,10 @@
   --primary-btn-hover-color: var(--loud-color-hover);
   --primary-btn-active-color: var(--loud-color-active);
 
+  --secondary-btn-main-color: var(--loud-color-light-15);
+  --secondary-btn-hover-color: var(--loud-color-light-20);
+  --secondary-btn-active-color: var(--loud-color-light-30);
+
   /* 
   ================================================================
   Font sizes 
@@ -60,6 +67,8 @@
 
   /* Heights */
   --header-height: 100px;
+  --primary-btn-height: 48px;
+  --primary-btn-height-small: calc(var(--primary-btn-height) / 2);
 
 
   /* 
@@ -68,5 +77,10 @@
   ================================================================
   */
 
+
+  /* Transitions */
+  --slow-transition: all .3s ease-in-out;
+  --medium-transition: all .2s ease-in-out;
+  --fast-transition: all .1s ease-in-out;
 
 }

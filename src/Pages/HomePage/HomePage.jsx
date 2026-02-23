@@ -1,5 +1,6 @@
-import React from 'react'
+import './HomePage.css'
 import HeaderComponent from '../../components/layout/HeaderComponent/HeaderComponent'
+import HeaderOptions from '../../components/common/HeaderOptions/HeaderOptions'
 
 function HomePage() {
     return (
@@ -10,7 +11,12 @@ function HomePage() {
                 <section className="section hero">
                     {/* Esta sección se divide en dos: Carrusel y Opciones. LA primera por ahora no la voy a hacer porque requiere un poco más de conocimiento de css o js. */}
                     <div className="hero-options-container max-width">
-                        
+                        <HeaderOptions />
+                        <HeaderOptions />
+                        <HeaderOptions />
+                        <HeaderOptions />
+                        <HeaderOptions />
+                        <HeaderOptions />
                     </div>
                 </section>
 

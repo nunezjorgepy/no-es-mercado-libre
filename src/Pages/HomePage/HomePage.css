@@ -1,0 +1,7 @@
+
+
+.hero-options-container{
+    display: flex;
+    gap: 15px;
+    justify-content: space-between;
+}
