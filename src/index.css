@@ -48,6 +48,11 @@ i{
 }
 
 .primary-btn{
+  /* 
+    Al crear las propiedades de este botón, tener en cuenta que muchas se repiten en el botón secundario.
+    Por lo tanto, se pueden reutilizar las propiedades.
+    Pasarlas al botón primario y modificar las clases que se muestran en los elementos que contengan el botón secundario, como el botón en HeaderOptions.
+  */
   background-color: var(--primary-btn-main-color);
 }
 .primary-btn:hover{

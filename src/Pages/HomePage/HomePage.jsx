@@ -1,8 +1,11 @@
 import './HomePage.css'
 import HeaderComponent from '../../components/layout/HeaderComponent/HeaderComponent'
 import HeaderOptions from '../../components/common/HeaderOptions/HeaderOptions'
+import { getAllHeaderOptions } from '../../service/headeroptions'
 
 function HomePage() {
+    const allHeaderOptions = getAllHeaderOptions()
+
     return (
         <>
             <HeaderComponent />
