@@ -5,7 +5,7 @@ function HeaderOptions(props) {
     const { headerOption: {title, image, descirption, btnTitle, link} } = props
 
     return (
-        <div className='header-option'>
+        <Link to={link} className='header-option'>
             <div className="header-option-title">
                 {title}
             </div>
@@ -17,10 +17,10 @@ function HeaderOptions(props) {
             <div className="header-option-description">
                 {descirption}
             </div>
-            <Link className="secondary-btn secondary-btn-small" type='button'>
+            <div className="secondary-btn secondary-btn-small" type='button'>
                 {btnTitle}
-            </Link>
-        </div>
+            </div>
+        </Link>
     )
 }
 
