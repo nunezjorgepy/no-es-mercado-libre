@@ -1,23 +1,24 @@
-import React from 'react'
 import { Link } from 'react-router'
 import './HeaderOptions.css'
 
-function HeaderOptions() {
+function HeaderOptions(props) {
+    const { headerOption: {title, image, descirption, btnTitle, link} } = props
+
     return (
         <div className='header-option'>
             <div className="header-option-title">
-                Medios de pago
+                {title}
             </div>
             <div className="img-container">
                 <img 
-                src="https://http2.mlstatic.com/frontend-assets/homes-palpatine/dynamic-access-desktop/payment-methods.svg" 
+                src={image} 
                 alt="Medios de Pago" />
             </div>
             <div className="header-option-description">
-                Pagá tus compras de forma rápida y segura
+                {descirption}
             </div>
             <Link className="secondary-btn secondary-btn-small" type='button'>
-                Conocer medios de pago
+                {btnTitle}
             </Link>
         </div>
     )

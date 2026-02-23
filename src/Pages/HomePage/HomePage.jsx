@@ -6,6 +6,12 @@ import { getAllHeaderOptions } from '../../service/headeroptions'
 function HomePage() {
     const allHeaderOptions = getAllHeaderOptions()
 
+    const HTMLHeaderOptions = allHeaderOptions.map(headerOption => {
+        return (
+            <HeaderOptions headerOption={headerOption} />
+        )
+    })
+
     return (
         <>
             <HeaderComponent />
@@ -14,12 +20,7 @@ function HomePage() {
                 <section className="section hero">
                     {/* Esta sección se divide en dos: Carrusel y Opciones. LA primera por ahora no la voy a hacer porque requiere un poco más de conocimiento de css o js. */}
                     <div className="hero-options-container max-width">
-                        <HeaderOptions />
-                        <HeaderOptions />
-                        <HeaderOptions />
-                        <HeaderOptions />
-                        <HeaderOptions />
-                        <HeaderOptions />
+                        {HTMLHeaderOptions}
                     </div>
                 </section>
 
