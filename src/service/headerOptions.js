@@ -1,4 +1,4 @@
-import headerOptions from "../fakeDB/headerOptions";
+import headerOptions from "../fakeDB/headerOptions.js";
 
 
 const getAllHeaderOptions = () => headerOptions
