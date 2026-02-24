@@ -2,13 +2,16 @@ import './HomePage.css'
 import HeaderComponent from '../../components/layout/HeaderComponent/HeaderComponent'
 import HeaderOptions from '../../components/common/HeaderOptions/HeaderOptions'
 import { getAllHeaderOptions } from '../../service/headeroptions'
+import getAllNovedades from '../../service/novedades'
 
 function HomePage() {
     const allHeaderOptions = getAllHeaderOptions()
+    const allNovedades = getAllNovedades()
+
 
     const HTMLHeaderOptions = allHeaderOptions.map(headerOption => {
         return (
-            <HeaderOptions headerOption={headerOption} />
+            <HeaderOptions key={headerOption.id} headerOption={headerOption} />
         )
     })
 
