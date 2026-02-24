@@ -1,7 +1,36 @@
 
 
+.novedades {
+    position: absolute;
+    top: calc(var(--header-height) + 23.6px);
+    width: 100%;
+}
+
+.down-with-sections {
+    height: 250px;
+    width: 100%;
+    color: transparent;
+}
+.relative {
+    position: relative;
+}
+.linear-background {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 30%;
+    color: transparent;
+    background: linear-gradient(transparent 0%, white 100%);
+}
+
+.hero{
+    position: relative;
+    z-index: 100;
+}
 .hero-options-container{
     display: flex;
     gap: 15px;
     justify-content: space-between;
+    z-index: 4;
 }

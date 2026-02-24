@@ -9,7 +9,7 @@ function HeaderOptions(props) {
             <div className="header-option-title">
                 {title}
             </div>
-            <div className="img-container">
+            <div className="img-options">
                 <img 
                 src={image} 
                 alt="Medios de Pago" />

@@ -1,4 +1,4 @@
-import mainNovedadesSection from "../fakeDB/headerPublicity";
+import mainNovedadesSection from "../fakeDB/headerNovedades.js";
 
 const getAllNovedades = () => mainNovedadesSection;
 

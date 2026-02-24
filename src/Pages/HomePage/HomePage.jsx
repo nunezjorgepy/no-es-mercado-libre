@@ -3,6 +3,7 @@ import HeaderComponent from '../../components/layout/HeaderComponent/HeaderCompo
 import HeaderOptions from '../../components/common/HeaderOptions/HeaderOptions'
 import { getAllHeaderOptions } from '../../service/headeroptions'
 import getAllNovedades from '../../service/novedades'
+import { Link } from 'react-router'
 
 function HomePage() {
     const allHeaderOptions = getAllHeaderOptions()
@@ -19,6 +20,21 @@ function HomePage() {
         <>
             <HeaderComponent />
             <main>
+                <section className="section novedades">
+                    {/* Esta sección ocupará el 100% de la pantalla para todos sus hijos. */}
+                    <Link to={allNovedades[1].link} className="relative">
+                        <div className="img-container">
+                            <img src={allNovedades[1].image} alt="Novedades" />
+                        </div>
+                        <div className="linear-background">
+                            H
+                        </div>
+                    </Link>
+                </section>
+                {/* Section para bajar las demás secciones */}
+                <section className="down-with-sections">
+                    Sección para bajar las demás secciones
+                </section>
                 {/* Hero */}
                 <section className="section hero">
                     {/* Esta sección se divide en dos: Carrusel y Opciones. LA primera por ahora no la voy a hacer porque requiere un poco más de conocimiento de css o js. */}
