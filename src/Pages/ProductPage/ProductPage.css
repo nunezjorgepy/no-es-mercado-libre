@@ -1,0 +1,22 @@
+
+.product-flex {
+    background-color: var(--white-full);
+    gap: 20px;
+    border-radius: 5px;
+    overflow: hidden;
+    padding: 24px;
+
+    /* TODO: Borrar */
+    min-height: 500px;
+}
+
+/* .product-container, .buy-info-container {
+    border: 1px solid green;
+} */
+.left-column {
+    flex: 2;
+}
+
+.right-column {
+    flex: 1;
+}
