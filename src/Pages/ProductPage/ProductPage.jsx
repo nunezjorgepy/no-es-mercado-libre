@@ -2,12 +2,12 @@ import './ProductPage.css'
 import HeaderComponent from '../../components/layout/HeaderComponent/HeaderComponent'
 import Product from '../../components/common/Product/Product'
 import { getProductById } from '../../service/products.service.js'
+import { useParams } from 'react-router';
 
 function ProductPage() {
 
-    const product = getProductById(3);
-    console.log(product);
-
+    const { product_id } = useParams();
+    const product = getProductById(Number(product_id));
 
     return (
         <>
