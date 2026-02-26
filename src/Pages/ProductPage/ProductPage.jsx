@@ -5,7 +5,7 @@ import { getProductById } from '../../service/products.service.js'
 
 function ProductPage() {
 
-    const product = getProductById(1);
+    const product = getProductById(3);
     console.log(product);
 
 

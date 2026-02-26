@@ -5,7 +5,6 @@
   ================================================================
   */
   --primary-color: #ffe600;
-  --succes-color: #00a650;
 
   /* Blancos */
   --white-full: #ffffff;
@@ -34,6 +33,15 @@
   --neutral-090: rgba(0, 0, 0, 0.9);
   --neutral-100: #000000;
 
+  /* Succes color */
+  --succes-color: #00a650;
+  --succes-color-backgorund: oklch(from var(--succes-color) calc(l * 3) calc(c * .5) h);
+  
+  /* 
+  ================================================================
+  Fuentes 
+  ================================================================
+  */
   /* Fuentes */
   --font-color-primary: var(--neutral-090);
   --font-color-secondary: var(var(--white-default));

@@ -6,7 +6,7 @@ La lista de productos tendrá las siguientes características
     - description
     - rate                  En una aplicación real, seguramente esto se obtenga calculando la media de las calificaciones de los clientes, que se obtiene de otra tabla.
     - price
-    - hasDiscount
+    - discount
     - getItToday
     - freeShipment          TODO: Se podría hacer una función que verifique si el precio supera una cantidad determinada para ver si hay envío gratis. De ser así, la propiedad freeShipment no 
                             haría falta, ya que se calcula en el componente.
@@ -25,7 +25,8 @@ const productList = [
         description: "Figura en 3D de Jill Vlanetine del Resident Evil 3. Aproximadamente 30cm de altura. 100% Plástico. No se incluyen accesorios.",
         rate: 4.5,
         price: 54000,
-        hasDiscount: 0.95,
+        discount: 0.05,
+        payments: 1,
         getItToday: false,
         freeShipment: true,
         images: [
@@ -112,7 +113,8 @@ Garantía de fabrica: 1 mes
 Garantía de fábrica: 30 días`,
         rate: 4.8,
         price: 89999,
-        hasDiscount: false,
+        discount: 0,
+        payments: 12,
         getItToday: false,
         freeShipment: true,
         images: [
@@ -160,7 +162,8 @@ Largo de la cinta: 39cm
 TODAS LAS FOTOS SON REALES`,
         rate: 4.8,
         price: 76000,
-        hasDiscount: 0.89,
+        discount: 0.11,
+        payments: 12,
         getItToday: true,
         freeShipment: true,
         images: [
