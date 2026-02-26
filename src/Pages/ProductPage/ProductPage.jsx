@@ -19,7 +19,7 @@ function ProductPage() {
                             {/* Left column */}
                             <div className="left-column">
                                 {/* Sección para el producto */}
-                                <div className="product-container">
+                                <div className="images-container">
                                     Imágenes
                                 </div>
                             </div>

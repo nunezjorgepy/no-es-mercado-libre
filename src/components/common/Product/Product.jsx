@@ -15,35 +15,38 @@ function Product(props) {
                 </div>
             </div>
             {/* Título del producto */}
-            <div className="product-title">
+            <h1 className="product-title">
                 {product.title}
-            </div>
+            </h1>
 
             {/* Descripción del producto */}
             <div className="product-rate">
+                {/* TODO: agregar las estrellas */}
                 {product.rate}
             </div>
 
-            {/* Precio del producto */}
-            <div className="product-real-price">
-                {product.price}
-            </div>
+            {/* Divisor de precio */}
+            <div className="product-price-divider">
+                {/* Precio del producto */}
+                <div className="product-real-price">
+                    {product.discount ? <span>$ ${product.price}</span> : ''}
+                </div>
 
-            {/* Precio del producto con descuento */}
-            <div className="product-price-discount">
-                {/* Muetsra el precio del producto con descuento, si tiene */}
-                {priceToPay}
-            </div>
+                {/* Precio del producto con descuento */}
+                <div className="product-price-discount">
+                    {/* Muetsra el precio del producto con descuento, si tiene */}
+                    $ {priceToPay} {product.discount > 0 ? <span className='succes-div succes-div-small'>${product.discount * 100}% OFF</span> : ''}
+                </div>
 
-            {/* Cuotas */}
-            <div className="product-payments">
-                {product.payments > 1 ? `${product.payments} cuotas de $ ${cuotas}` : ''}
+                {/* Cuotas */}
+                <div className="product-payments">
+                    {product.payments > 1 ? `${product.payments} cuotas de $ ${cuotas}` : ''}
+                </div>
             </div>
 
             {/* Llega máñana */}
-            <div className="product-get-it-today">
-                {product.getItToday ? 'Llega mañana' : ''}
-            </div>
+            {product.getItToday ? <div className="product-get-it-today succes-div">Llega manaña</div> : ''}
+            
 
             {/* Free return */}
             <div className="product-free-return">
@@ -62,7 +65,11 @@ function Product(props) {
                         - Si no hay stock, deshabilitar los botones
                         - Si hay stock, crear su funcionalidad
                     */}
-                    Cantidad: <button className="minus">-</button> 1 <button className="plus">+</button> ({product.stock ? product.stock + ' disponibles' : 'Sin stock'})
+                    Cantidad: 
+                    <button className="change-quantity-btn minus">-</button> 
+                    <span className='quantity-to-buy'>1</span> 
+                    <button className="change-quantity-btn plus">+</button> 
+                    {product.stock ? <span className='quantity-in-stock'>({product.stock} disponibles)</span> : 'Sin stock'}
                 </div>
             </div>
         </div>

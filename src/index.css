@@ -54,6 +54,22 @@ i{
     width: 100%;
 }
 
+
+.succes-div{
+  color: var(--succes-color);
+  background-color: var(--succes-color-backgorund);
+  font-weight: 600;
+  font-size: 14px;
+  text-wrap: nowrap;
+  width: min-content;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+.succes-div-small{
+    padding: 2px 4px;
+    font-size: 12px;
+}
+
 .primary-btn{
   /* 
     Al crear las propiedades de este botón, tener en cuenta que muchas se repiten en el botón secundario.

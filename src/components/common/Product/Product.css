@@ -1,5 +1,78 @@
 
-.product-get-it-today{
+.product-container{
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 10px;
+    padding: 0 30px 20px 30px;
+}
+
+.product-title {
+    font-size: 22px;
+    padding: 0 50px 0 0;
+}
+.product-rate, .product-real-price{
+    font-size: 14px;
+    color: var(--neutral-060);
+}
+
+.product-real-price{
+    text-decoration: line-through;
+}
+.product-price-discount{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 5px 0;
+    font-size: 32px;
+}
+.product-payments{
+    font-weight: 600;
+}
+
+.product-get-it-today {
+    margin: 15px 0 10px 0;
+}
+
+.product-free-return {
+    color: var(--neutral-050);
+}
+.product-free-return span {
     color: var(--succes-color);
-    background-color: var(--succes-color-backgorund);
+    font-weight: 600;
+    font-size: 15px;
+}
+
+/*
+=============================================================================
+    Stock
+===============================================================================
+*/
+.product-stock-container{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 10px 0;
+}
+.product-stock {
+    font-weight: 600;
+    font-size: 14px;
+}
+.product-quantity{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 15px;
+}
+
+.change-quantity-btn{
+    color: var(--loud-color-default);
+    font-weight: 700;
+    font-size: 18px;
+}
+.quantity-to-buy{
+    color: var(--succes-color);
+}
+.quantity-in-stock{
+    color: var(--neutral-060);
+    font-size: 14px;
 }
