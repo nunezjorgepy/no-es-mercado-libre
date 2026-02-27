@@ -1,8 +1,14 @@
 import './Product.css'
 
 function Product(props) {
-    const { product, showImage } = props
-    console.log(product);
+    const { product, showImage, isProductPage } = props
+    /* 
+    Las variables props hacen referencia a:
+        - product: se entiende sola
+        - showImage: si se tiene que mostrar la imagen o no. En la página del producto, es false ya que se muestra en otra parte.
+        - isProductPage: muestra u oculta las divisiones del producto que solamente se ven en la página del producto.
+    */
+
     const priceToPay = product.price * (1 - product.discount)
     const cuotas = ((priceToPay / product.payments) * 1.05).toFixed(2)
 
@@ -22,7 +28,7 @@ function Product(props) {
             {/* Descripción del producto */}
             <div className="product-rate">
                 {/* TODO: agregar las estrellas */}
-                {product.rate}
+                {product.rate} <i className="bi bi-star-fill blue-star-fill"></i>
             </div>
 
             {/* Divisor de precio */}
@@ -47,31 +53,35 @@ function Product(props) {
             {/* Llega máñana */}
             {product.getItToday ? <div className="product-get-it-today succes-div">Llega manaña</div> : ''}
             
-
-            {/* Free return */}
-            <div className="product-free-return">
-                <span className="product-free-return-span">Devolución gratis</span> Tenés 30 días desde que lo recibís.
-            </div>
-
-            <div className="product-stock-container">
-                {/* Información sobreel stock y cuántos elegir */}
-                <div className="product-stock">
-                    {product.stock ? 'Stock disponible' : 'Sin stock'}
+            {/* Only for the ProdcutPage */}
+            {isProductPage && 
+                <div className="product-free-return">
+                    {/* Free return */}
+                    <span className="product-free-return-span">Devolución gratis</span> Tenés 30 días desde que lo recibís.
                 </div>
+            }
 
-                <div className="product-quantity">
-                    {/* Botones para elegir cuantas unidades comprar */}
-                    {/* TODO: 
-                        - Si no hay stock, deshabilitar los botones
-                        - Si hay stock, crear su funcionalidad
-                    */}
-                    Cantidad: 
-                    <button className="change-quantity-btn minus">-</button> 
-                    <span className='quantity-to-buy'>1</span> 
-                    <button className="change-quantity-btn plus">+</button> 
-                    {product.stock ? <span className='quantity-in-stock'>({product.stock} disponibles)</span> : 'Sin stock'}
+            {isProductPage && 
+                <div className="product-stock-container">
+                    {/* Información sobreel stock y cuántos elegir */}
+                    <div className="product-stock">
+                        {product.stock ? 'Stock disponible' : 'Sin stock'}
+                    </div>
+
+                    <div className="product-quantity">
+                        {/* Botones para elegir cuantas unidades comprar */}
+                        {/* TODO: 
+                            - Si no hay stock, deshabilitar los botones
+                            - Si hay stock, crear su funcionalidad
+                        */}
+                        Cantidad: 
+                        <button className="change-quantity-btn minus">-</button> 
+                        <span className='quantity-to-buy'>1</span> 
+                        <button className="change-quantity-btn plus">+</button> 
+                        {product.stock ? <span className='quantity-in-stock'>({product.stock} disponibles)</span> : 'Sin stock'}
+                    </div>
                 </div>
-            </div>
+            }
         </div>
     )
 }

@@ -28,7 +28,7 @@ function ProductPage() {
                             <div className="right-column">
                                 {/* Sección para la información de la compra */}
                                 <div className="buy-info-container">
-                                    <Product product={product}/>
+                                    <Product product={product} isProductPage/>
                                 </div>
                             </div>
                         </div>
