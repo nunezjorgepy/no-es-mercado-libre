@@ -4,10 +4,18 @@ import HeaderOptions from '../../components/common/HeaderOptions/HeaderOptions'
 import { getAllHeaderOptions } from '../../service/headeroptions.js'
 import getAllNovedades from '../../service/novedades'
 import { Link } from 'react-router'
+import { getAllProducts } from '../../service/products.service.js'
+import Product from '../../components/common/Product/Product.jsx'
 
 function HomePage() {
+    /* TODO: pasar esto a una useEffect, usando un useState para cada uno. */
     const allHeaderOptions = getAllHeaderOptions()
     const allNovedades = getAllNovedades()
+    const allProducts = getAllProducts()
+
+    /* TODO: borrar */
+    const demoProduct = allProducts[1]
+    console.log(demoProduct)
 
 
     const HTMLHeaderOptions = allHeaderOptions.map(headerOption => {
@@ -54,8 +62,19 @@ function HomePage() {
                 <section className="section offers-section">
                     {/* Contiene dos secciones en forma horizontal. La primera muestra la oferta del día y es aproximadamente la mitad de la segunda, que muestra ofertas varias. */}
                     <div className="offers-container max-width">
-                        <div className="day-offer"></div>
-                        <div className="best-offers"></div>
+                        <div className="daily-offer">
+                            <h3 className="daily-offer-title">
+                                Oferta del día
+                            </h3>
+                            <Link to={`/product/${demoProduct.id}`}>
+                                <Product product={demoProduct} showImage />
+                            </Link>
+                        </div>
+                        <div className="best-offers">
+                            <h3 className="daily-offer-title">
+                                Ofertas
+                            </h3>
+                        </div>
                     </div>
 
                 </section>

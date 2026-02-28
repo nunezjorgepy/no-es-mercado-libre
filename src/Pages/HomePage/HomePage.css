@@ -34,3 +34,27 @@
     justify-content: space-between;
     z-index: 4;
 }
+
+
+/* 
+====================================
+Section Ofertas
+====================================
+*/
+.offers-container {
+    display: flex;;
+}
+.daily-offer, .best-offers{
+    border-radius: 8px;
+    padding: 20px;
+}
+.daily-offer{
+    margin-right: var(--margin-default);
+    width: calc(30% - var(--margin-default));
+    background-color: var(--white-full);
+}
+.best-offers {
+    width: 70%;
+    background-color: var(--white-full);
+    position: relative;
+}

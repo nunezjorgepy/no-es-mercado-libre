@@ -13,10 +13,10 @@ function Product(props) {
     const cuotas = ((priceToPay / product.payments) * 1.05).toFixed(2)
 
     return (
-        <div className='product-container'>
+        <div className={`product-container ${!isProductPage ? 'medium-container' : ''}`}>
             {/* Imagen del producto (No se usa si es la página del producto, ya que se muestra en otro lado) */}
             <div className="product-image">
-                <div className="img-container">
+                <div className="img-container object-fit">
                     {showImage ? <img src={product.images[0]} alt={product.title} /> : null}
                 </div>
             </div>
@@ -41,7 +41,7 @@ function Product(props) {
                 {/* Precio del producto con descuento */}
                 <div className="product-price-discount">
                     {/* Muetsra el precio del producto con descuento, si tiene */}
-                    $ {priceToPay} {product.discount > 0 ? <span className='succes-div succes-div-small'>${product.discount * 100}% OFF</span> : ''}
+                    $ {priceToPay} {product.discount > 0 ? <span className='succes-div succes-div-small'>{product.discount * 100}% OFF</span> : ''}
                 </div>
 
                 {/* Cuotas */}

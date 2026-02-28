@@ -85,6 +85,15 @@
   ================================================================
   */
 
+  /* Margins */
+  --margin-small: 8px;
+  --margin-default: 16px;
+  --margin-medium: 24px;
+  --margin-large: 32px;
+
+  /* Border and Border radius */
+  --border-radius-default: 4px;
+
 
   /* Transitions */
   --slow-transition: all .3s ease-in-out;

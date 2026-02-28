@@ -28,6 +28,7 @@ button {
 }
 img {
   width: 100%;
+  object-fit: contain;
 }
 a{
   text-decoration: none;
@@ -53,6 +54,9 @@ i{
 }
 .img-container {
     width: 100%;
+}
+.section {
+  margin-bottom: 50px;
 }
 
 /* Icons */
