@@ -26,8 +26,8 @@ function HomePage() {
 
     const HTMLProducts = demoList.map(product => {
         return (
-            <Link to={`/product/${product.id}`} className='offer-product-link'>
-                <Product key={product.id} product={product} showImage containerType='small'/>
+            <Link to={`/product/${product.id}`} className='offer-product-link' key={product.id}>
+                <Product product={product} showImage containerType='small'/>
             </Link>
         )
     })

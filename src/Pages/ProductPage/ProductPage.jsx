@@ -34,6 +34,7 @@ function ProductPage() {
 
                                 {/* Botones de compra */}
                                 <div className="btns-container">
+                                    {/* Sguramente tenga que envolver cada botón en un link. */}
                                     <ButtonComponent btn_text="Comprar ahora" btn_type="primary" btn-size="normal"/>
                                     <ButtonComponent btn_text="Agregar al carrito" btn_type="secondary" btn-size="normal" btn_icon="bi bi-cart2"/>
                                 </div>

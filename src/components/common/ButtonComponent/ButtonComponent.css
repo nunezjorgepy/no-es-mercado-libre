@@ -1,5 +1,7 @@
 
 
+/* Primary button */
+/* Este es el botón pro defecto, tanto en estilos como en tamaño */
 .primary-btn{
     background-color: var(--primary-btn-main-color);
     color: var(--white-full);
@@ -15,9 +17,17 @@
     transition: var(--medium-transition);
     cursor: pointer;
 }
+.primary-btn i {
+    margin-right: 10px;
+}
 .primary-btn:hover{
     background-color: var(--primary-btn-hover-color);
 }
+.primary-btn:active {
+    background-color: var(--primary-btn-active-color);
+}
+
+/* Secondary button */
 .secondary-btn {
     background-color: var(--secondary-btn-main-color);
     color: var(--loud-color-default);
@@ -28,5 +38,23 @@
 }
 .secondary-btn i {
     color: var(--loud-color-default);
-    margin-right: 10px;
+}
+.secondary-btn:active {
+    background-color: var(--secondary-btn-active-color);
+}
+
+/* Small button */
+.small-btn {
+    padding: 0;
+    border-radius: 4px;
+    font-size: 12px;
+    height: 24px;
+    line-height: 24px;
+}
+.medium-btn {
+    padding: 0 12px;
+    border-radius: 5px;
+    font-size: 14px;
+    height: 32px;
+    line-height: 32px;
 }

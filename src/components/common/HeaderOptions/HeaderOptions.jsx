@@ -1,5 +1,6 @@
 import { Link } from 'react-router'
 import './HeaderOptions.css'
+import ButtonComponent from '../ButtonComponent/ButtonComponent'
 
 function HeaderOptions(props) {
     const { headerOption: {title, image, descirption, btnTitle, link} } = props
@@ -17,9 +18,7 @@ function HeaderOptions(props) {
             <div className="header-option-description">
                 {descirption}
             </div>
-            <div className="secondary-btn secondary-btn-small" type='button'>
-                {btnTitle}
-            </div>
+            <ButtonComponent btn_text={btnTitle} btn_type="secondary" btn_size="small"/>
         </Link>
     )
 }
