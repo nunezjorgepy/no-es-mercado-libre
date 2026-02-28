@@ -3,7 +3,8 @@
 # Qué falta?
 El disclaimer de que esto NO es mercadolibre. No dejar ninguna información personal.
 
-- En HeaderOptions, el botón para moverse entre las opciones fuera de vista. Esto lo dejo para cuando tengas productos que mostrar.
+- En HeroOptions, el botón para moverse entre las opciones fuera de vista. Esto lo dejo para cuando tengas productos que mostrar.
+- En la sección de ofertas, el botón para moverse entre las opciones fuera de vista. Esto lo dejo para cuando tengas productos que mostrar. (Es lo mismo que el anterior)
 
 # ¿Qué sigue?
 Voy a usar el componente Product para la sección Ofertas de la página principal.

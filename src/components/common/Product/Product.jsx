@@ -1,27 +1,31 @@
 import './Product.css'
 
 function Product(props) {
-    const { product, showImage, isProductPage } = props
+    const { product, showImage, isProductPage, containerType } = props
     /* 
     Las variables props hacen referencia a:
         - product: se entiende sola
         - showImage: si se tiene que mostrar la imagen o no. En la página del producto, es false ya que se muestra en otra parte.
         - isProductPage: muestra u oculta las divisiones del producto que solamente se ven en la página del producto.
+        - containerType
     */
 
     const priceToPay = product.price * (1 - product.discount)
     const cuotas = ((priceToPay / product.payments) * 1.05).toFixed(2)
 
+    const imageClasses = (containerType === 'medium' ? 'object-fit object-fit-medium' : containerType === 'small' ? 'object-fit object-fit-small' : 'object-fit');
+    const titleClasses = 'product-title' + (containerType === 'medium' ? ' product-title-medium' : containerType === 'small' ? ' product-title-small' : '');
+
     return (
         <div className={`product-container ${!isProductPage ? 'medium-container' : ''}`}>
             {/* Imagen del producto (No se usa si es la página del producto, ya que se muestra en otro lado) */}
             <div className="product-image">
-                <div className="img-container object-fit">
+                <div className={imageClasses}>
                     {showImage ? <img src={product.images[0]} alt={product.title} /> : null}
                 </div>
             </div>
             {/* Título del producto */}
-            <h1 className="product-title">
+            <h1 className={titleClasses}>
                 {product.title}
             </h1>
 

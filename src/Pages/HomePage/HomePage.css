@@ -50,14 +50,24 @@ Section Ofertas
 .daily-offer, .best-offers{
     border-radius: 8px;
     padding: 20px;
+    background-color: var(--white-full);
+    box-shadow: 0 1px 2px 0 var(--neutral-010);
 }
 .daily-offer{
     margin-right: var(--margin-default);
     width: calc(30% - var(--margin-default));
-    background-color: var(--white-full);
 }
 .best-offers {
     width: 70%;
-    background-color: var(--white-full);
-    position: relative;
+}
+.daily-offer-title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.offers-prodcuts-list{
+    display: flex;
+}
+.offer-product-link{
+    height: 100%;
 }

@@ -13,14 +13,22 @@ function HomePage() {
     const allNovedades = getAllNovedades()
     const allProducts = getAllProducts()
 
-    /* TODO: borrar */
+    /* TODO: el producto de oferta diaria y la lista deben venir de la base de datos. */
     const demoProduct = allProducts[2]
-    console.log(demoProduct)
+    const demoList = [allProducts[0], allProducts[1], allProducts[2], allProducts[0]]
 
 
-    const HTMLHeaderOptions = allHeaderOptions.map(headerOption => {
+    const HTMLHeroOptions = allHeaderOptions.map(headerOption => {
         return (
             <HeaderOptions key={headerOption.id} headerOption={headerOption} />
+        )
+    })
+
+    const HTMLProducts = demoList.map(product => {
+        return (
+            <Link to={`/product/${product.id}`} className='offer-product-link'>
+                <Product key={product.id} product={product} showImage containerType='small'/>
+            </Link>
         )
     })
 
@@ -47,7 +55,7 @@ function HomePage() {
                 <section className="section hero">
                     {/* Esta sección se divide en dos: Carrusel y Opciones. LA primera por ahora no la voy a hacer porque requiere un poco más de conocimiento de css o js. */}
                     <div className="hero-options-container max-width">
-                        {HTMLHeaderOptions}
+                        {HTMLHeroOptions}
                     </div>
                 </section>
 
@@ -62,18 +70,28 @@ function HomePage() {
                 <section className="section offers-section">
                     {/* Contiene dos secciones en forma horizontal. La primera muestra la oferta del día y es aproximadamente la mitad de la segunda, que muestra ofertas varias. */}
                     <div className="offers-container max-width">
+                        {/* Oferta del día */}
                         <div className="daily-offer">
                             <h3 className="daily-offer-title">
                                 Oferta del día
                             </h3>
                             <Link to={`/product/${demoProduct.id}`}>
-                                <Product product={demoProduct} showImage />
+                                <Product product={demoProduct} showImage containerType='medium' />
                             </Link>
                         </div>
+
+                        {/* Mejores ofertas */}
+                        {/* TODO: Faltan los botones para moverse entre mejores ofertas, con su funcionalidad */}
                         <div className="best-offers">
                             <h3 className="daily-offer-title">
-                                Ofertas
+                                <span>Ofertas</span>
+                                <Link to="https://www.mercadolibre.com.ar/ofertas#c_id=/home/promotions-recommendations&c_uid=c2e85acf-2dbf-4e54-b9c5-a8e3e459933d" className="link-font">
+                                    Mostrar todas las ofertas
+                                </Link>
                             </h3>
+                            <div className="offers-prodcuts-list">
+                                {HTMLProducts}
+                            </div>
                         </div>
                     </div>
 
