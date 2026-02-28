@@ -3,6 +3,7 @@ import HeaderComponent from '../../components/layout/HeaderComponent/HeaderCompo
 import Product from '../../components/common/Product/Product'
 import { getProductById } from '../../service/products.service.js'
 import { useParams } from 'react-router';
+import ButtonComponent from '../../components/common/ButtonComponent/ButtonComponent.jsx';
 
 function ProductPage() {
 
@@ -29,6 +30,12 @@ function ProductPage() {
                                 {/* Sección para la información de la compra */}
                                 <div className="buy-info-container">
                                     <Product product={product} isProductPage/>
+                                </div>
+
+                                {/* Botones de compra */}
+                                <div className="btns-container">
+                                    <ButtonComponent btn_text="Comprar ahora" btn_type="primary" btn-size="normal"/>
+                                    <ButtonComponent btn_text="Agregar al carrito" btn_type="secondary" btn-size="normal" btn_icon="bi bi-cart2"/>
                                 </div>
                             </div>
                         </div>

@@ -10,13 +10,19 @@
     min-height: 500px;
 }
 
-/* .product-container, .buy-info-container {
-    border: 1px solid green;
-} */
+/* 
+    TODO: Revisar las medidas correctas en la página de ML
+*/
 .left-column {
     flex: 2;
 }
 
 .right-column {
     flex: 1;
+}
+
+.btns-container{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }

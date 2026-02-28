@@ -11,6 +11,7 @@ import SalePage from './Pages/SalePage/SalePage'
 import BuyPage from './Pages/BuyPage/BuyPage'
 import EditInfoPage from './Pages/EditInfoPage/EditInfoPage'
 import SearchPage from './Pages/SearchPage/SearchPage'
+import DevelompentPage from './Pages/Development/DevelompentPage'
 
 function App() {
   /* TODO: en muhcas de las rutas, voy a tener que agregar alguna id (estilo /product/:id) */
@@ -30,6 +31,9 @@ function App() {
         <Route path="/sale" element={<SalePage />} />
         <Route path="/buy" element={<BuyPage />} />
         <Route path="/edit_info" element={<EditInfoPage />} />
+
+        {/* DeveloperPage */}
+        <Route path="/developer" element={<DevelompentPage />} />
       </Routes>
     </>
   )

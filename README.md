@@ -7,13 +7,17 @@ El disclaimer de que esto NO es mercadolibre. No dejar ninguna información pers
 - En la sección de ofertas, el botón para moverse entre las opciones fuera de vista. Esto lo dejo para cuando tengas productos que mostrar. (Es lo mismo que el anterior)
 
 # ¿Qué sigue?
-Voy a usar el componente Product para la sección Ofertas de la página principal.
+Crear el componente de botón primario, separando el botón secundario y los distintos tamaños.
 
-El flex se divide en
-    - Un elemento de ancho 30% - 16px, con margin derecho de 16px., para la oferta de tamaño más grande
-        - Tiene un padding interno de 20px
+Por ahora, tengo los botones:
+    - Primario: el que se muestra en la página de produto, que dice "Comprar ahora"
+    - Secundario: Se muestra justo debajo del anterior, para agregar al carrito
 
-    - Otro de ancho del 70% para las ofertas de tamaño más chico. A su vez, este elemento se divide en:
-        - 4 sub-elementos, cada uno de un 25% de ancho (la página muestra 181.5px, pero no sé si hacerlo así)
-        - Cada uno de estos elementos es un componente Product, showImage y !isProductPage
-    - La segunda sección tiene dos botones para ir moviendose entre productos, aunque lo más probable es que lo deje para cuando entienda bien cómo hacer la función para moverme entre productos.
+Y los tamaños son:
+    - Normal: el de 'Comprar ahora'
+    - medium: el que figura en la sección Meli+ de HomePage.
+    - xsmall: el que se muestra en las opciones de la sección header
+
+Para diferencias los botones, paso por props las opciones btn-size (normal, medium, xsmall, etc.) y btn-type (primary, secondary, etc.)
+
+Empiezo creando el botón primario normal, y con eso voy modificando según convenga los tamaños y el tipo de botón.

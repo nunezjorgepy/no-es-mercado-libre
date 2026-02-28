@@ -51,6 +51,7 @@ function HomePage() {
                 <section className="down-with-sections">
                     Sección para bajar las demás secciones
                 </section>
+                
                 {/* Hero */}
                 <section className="section hero">
                     {/* Esta sección se divide en dos: Carrusel y Opciones. LA primera por ahora no la voy a hacer porque requiere un poco más de conocimiento de css o js. */}
@@ -62,6 +63,13 @@ function HomePage() {
                 {/* Payment methods */}
                 <section className="section payment-section">
                     <div className="payment-methods-container max-width">
+
+                    </div>
+                </section>
+
+                {/* Meli+ */}
+                <section className="section meli-plus-section">
+                    <div className="meli-plus-container max-width">
 
                     </div>
                 </section>
@@ -97,12 +105,7 @@ function HomePage() {
 
                 </section>
 
-                {/* Meli+ */}
-                <section className="section meli-plus-section">
-                    <div className="meli-plus-container max-width">
 
-                    </div>
-                </section>
 
                 {/* More solds */}
                 <section className="section best-sales-section">
