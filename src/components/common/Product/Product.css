@@ -5,9 +5,11 @@
     grid-template-columns: 1fr;
     row-gap: 10px;
     padding: 0 30px 20px 30px;
+    font-size: 16px;
 }
 .medium-container {
     padding: 0;
+    font-size: 12px;
 }
 
 /* Image */
@@ -21,11 +23,11 @@
 }
 
 .product-title {
-    font-size: 22px;
+    font-size: 1.375em;
     padding: 0 50px 0 0;
 }
 .product-rate, .product-real-price{
-    font-size: 14px;
+    font-size: 0.875em;
     color: var(--neutral-060);
 }
 
@@ -37,13 +39,14 @@
     align-items: center;
     gap: 10px;
     margin: 5px 0;
-    font-size: 32px;
+    font-size: 2em;
 }
 .product-payments{
     font-weight: 600;
 }
 
 .product-get-it-today {
+    font-size: .875em;
     margin: 15px 0 10px 0;
 }
 
@@ -69,24 +72,24 @@
 }
 .product-stock {
     font-weight: 600;
-    font-size: 14px;
+    font-size: 0.875em;
 }
 .product-quantity{
     display: flex;
     align-items: center;
     gap: 15px;
-    font-size: 15px;
+    font-size: .95em;
 }
 
 .change-quantity-btn{
     color: var(--loud-color-default);
     font-weight: 700;
-    font-size: 18px;
+    font-size: 1.125em;
 }
 .quantity-to-buy{
     color: var(--succes-color);
 }
 .quantity-in-stock{
     color: var(--neutral-060);
-    font-size: 14px;
+    font-size: 0.875em;
 }

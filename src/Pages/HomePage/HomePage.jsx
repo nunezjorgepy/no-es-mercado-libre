@@ -14,7 +14,7 @@ function HomePage() {
     const allProducts = getAllProducts()
 
     /* TODO: borrar */
-    const demoProduct = allProducts[1]
+    const demoProduct = allProducts[2]
     console.log(demoProduct)
 
 

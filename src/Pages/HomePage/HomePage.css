@@ -44,6 +44,9 @@ Section Ofertas
 .offers-container {
     display: flex;;
 }
+.daily-offer-title {
+    margin-bottom: 20px;
+}
 .daily-offer, .best-offers{
     border-radius: 8px;
     padding: 20px;
