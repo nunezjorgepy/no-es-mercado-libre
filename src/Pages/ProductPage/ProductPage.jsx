@@ -18,7 +18,7 @@ function ProductPage() {
                     <div className="max-width">
                         <div className="flex-row product-flex">
                             {/* Left column */}
-                            <div className="left-column">
+                            <div className="product-page-left-column">
                                 {/* Sección para el producto */}
                                 <div className="images-container">
                                     Imágenes
@@ -26,7 +26,7 @@ function ProductPage() {
                             </div>
 
                             {/* Right column */}
-                            <div className="right-column">
+                            <div className="product-page-right-column">
                                 {/* Sección para la información de la compra */}
                                 <div className="buy-info-container">
                                     <Product product={product} isProductPage/>

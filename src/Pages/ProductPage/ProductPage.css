@@ -13,12 +13,16 @@
 /* 
     TODO: Revisar las medidas correctas en la página de ML
 */
-.left-column {
-    flex: 2;
+.product-page-left-column {
+    flex-basis: 0%;
+    flex-grow: 3;
+    flex-shrink: 1;
 }
 
-.right-column {
-    flex: 1;
+.product-page-right-column {
+    flex-basis: 0%;
+    flex-grow: 1;
+    flex-shrink: 1;
 }
 
 .btns-container{
