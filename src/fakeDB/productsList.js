@@ -190,6 +190,35 @@ TODAS LAS FOTOS SON REALES`,
                 origin: 'China'
             }
         }
+    },
+    {
+        id: 4,
+        seller_id: 1,
+        title: "Silla Escritorio Ergonómica Malla Kista Negro Holz Negro Tela",
+        description: `La silla de escritorio Holz BS-1001 es la opción ideal para quienes buscan comodidad y funcionalidad en su espacio de trabajo. Su diseño ergonómico se adapta a la forma del cuerpo, proporcionando un soporte adecuado durante largas horas de uso.`,
+        rate: 4.8,
+        price: 99999,
+        discount: 0.08,
+        payments: 12,
+        getItToday: true,
+        freeShipment: true,
+        images: [
+            'https://http2.mlstatic.com/D_NQ_NP_2X_699043-MLA105013876907_012026-F.webp',
+            'https://http2.mlstatic.com/D_NQ_NP_2X_816029-MLA105014497833_012026-F.webp',
+            'https://http2.mlstatic.com/D_NQ_NP_2X_817230-MLA104460286436_012026-F.webp',
+            'https://http2.mlstatic.com/D_NQ_NP_2X_973364-MLA105014260719_012026-F.webp',
+            'https://http2.mlstatic.com/D_NQ_NP_2X_904699-MLA105014380155_012026-F.webp',
+        ],
+        category: 'home',
+        stock: 10,
+        characteristics: {
+            otros: {
+                gamer: false,
+                giratoria: true,
+                respaldo_reclinable: false,
+                altura_regulable: true,
+            },
+        }
     }
 ]
 

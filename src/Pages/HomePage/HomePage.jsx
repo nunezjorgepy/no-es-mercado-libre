@@ -18,7 +18,7 @@ function HomePage() {
 
     /* TODO: el producto de oferta diaria y la lista deben venir de la base de datos. */
     const demoProduct = allProducts[2]
-    const demoList = [allProducts[0], allProducts[1], allProducts[2], allProducts[0]]
+    const demoList = [allProducts[0], allProducts[1], allProducts[2], allProducts[3]]
 
 
     const HTMLHeroOptions = allHeaderOptions.map(headerOption => {
