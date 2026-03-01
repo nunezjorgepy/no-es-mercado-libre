@@ -6,12 +6,15 @@ import getAllNovedades from '../../service/novedades'
 import { Link } from 'react-router'
 import { getAllProducts } from '../../service/products.service.js'
 import Product from '../../components/common/Product/Product.jsx'
+import getAllMeliPlus from '../../service/meliPlus.service.js'
 
 function HomePage() {
     /* TODO: pasar esto a una useEffect, usando un useState para cada uno. */
     const allHeaderOptions = getAllHeaderOptions()
     const allNovedades = getAllNovedades()
     const allProducts = getAllProducts()
+    const meliPlus = getAllMeliPlus()
+    console.log(meliPlus)
 
     /* TODO: el producto de oferta diaria y la lista deben venir de la base de datos. */
     const demoProduct = allProducts[2]
