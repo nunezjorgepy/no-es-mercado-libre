@@ -7,6 +7,7 @@ import { Link } from 'react-router'
 import { getAllProducts } from '../../service/products.service.js'
 import Product from '../../components/common/Product/Product.jsx'
 import getAllMeliPlus from '../../service/meliPlus.service.js'
+import ButtonComponent from '../../components/common/ButtonComponent/ButtonComponent.jsx'
 
 function HomePage() {
     /* TODO: pasar esto a una useEffect, usando un useState para cada uno. */
@@ -73,7 +74,37 @@ function HomePage() {
                 {/* Meli+ */}
                 <section className="section meli-plus-section">
                     <div className="meli-plus-container max-width">
+                        {/* Meli plus header */}
+                        <div className="meli-plus-header">
+                            {/* Se separa en dos divisiones, header-left-section y header-right-section */}
+                            <div className="meli-plus-header-left-column left-column">
+                                <div className="meli-plus-img">
+                                    <img src={meliPlus.title.image} alt="Meli Plus" />
+                                </div>
+                                <h2 className="meli-plus-title">
+                                    {/* TODO: El primer span debería tener un gradiente de fondo */}
+                                    <span className="linear-gradient-font-meli-plus">
+                                        PROBÁ 1 MES GRATIS
+                                    </span>
+                                    <span style={{color: 'transparent'}}>"</span>
+                                    <span>
+                                        DE BENEFICIOS EXCLUSIVOS
+                                    </span>
+                                </h2>
+                            </div>
+                            <div className="meli-plus-header-right-column rigth-column">
+                                {/* Link */}
+                                <Link to={'https://www.mercadolibre.com.ar/suscripciones/meli-mas/widget-home?origin=widget-home&return_url=https%3A%2F%2Fwww.mercadolibre.com.ar&requireIframeModal=true#origin=home#c_id=/home/user-loyalty-benefits&c_uid=c005b6a0-7982-43b1-abd6-37fb9a5e4d90'}>
+                                    <ButtonComponent btn_text="Quiero probar Meli+ gratis" btn_type="primary" btn_size="medium" />
+                                </Link>
+                            </div>
 
+                        </div>
+
+                        {/* Meli Plus Benefits */}
+                        <div className="meli-plus-benefits-container">
+                            
+                        </div>
                     </div>
                 </section>
 

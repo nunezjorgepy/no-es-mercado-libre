@@ -1,7 +1,6 @@
 export const meliPlusList = {
     title: {
         image: 'https://http2.mlstatic.com/resources/frontend/statics/loyal/partners/meliplus/vdp/pill-meliplus.png',
-        text: 'PROBÁ 1 MES GRATIS DE BENEFICIOS EXCLUSIVOS'
     },
     benefits: {
         benefitOne: {

@@ -35,6 +35,39 @@
     z-index: 4;
 }
 
+/* 
+====================================
+Section MeliPlus
+====================================
+*/
+.meli-plus-container {
+    border-radius: 6px;
+    overflow: hidden;
+}
+.meli-plus-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 20px;
+    background-color: var(--white-light);
+}
+.meli-plus-header-left-column {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+.meli-plus-img img {
+    width: 73px;
+    object-fit: cover;
+}
+.meli-plus-title {
+    font-size: 18px;
+    font-weight: 800;
+    line-height: 20px;
+    margin: 15px 0;
+    text-transform: uppercase;
+}
+
 
 /* 
 ====================================
