@@ -40,6 +40,7 @@
 Section MeliPlus
 ====================================
 */
+/* Header */
 .meli-plus-container {
     border-radius: 6px;
     overflow: hidden;
@@ -61,11 +62,19 @@ Section MeliPlus
     object-fit: cover;
 }
 .meli-plus-title {
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 800;
     line-height: 20px;
     margin: 15px 0;
     text-transform: uppercase;
+}
+/* Beneficios */
+.meli-plus-benefits-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 28px 56px;
+    background-color: var(--white-full);
 }
 
 

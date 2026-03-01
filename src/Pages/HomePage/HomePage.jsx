@@ -8,6 +8,7 @@ import { getAllProducts } from '../../service/products.service.js'
 import Product from '../../components/common/Product/Product.jsx'
 import getAllMeliPlus from '../../service/meliPlus.service.js'
 import ButtonComponent from '../../components/common/ButtonComponent/ButtonComponent.jsx'
+import BenefitComponent from '../../components/common/BenefitComponent/BenefitComponent.jsx'
 
 function HomePage() {
     /* TODO: pasar esto a una useEffect, usando un useState para cada uno. */
@@ -15,7 +16,8 @@ function HomePage() {
     const allNovedades = getAllNovedades()
     const allProducts = getAllProducts()
     const meliPlus = getAllMeliPlus()
-    console.log(meliPlus)
+    const meliPlusBenefits = meliPlus.benefits
+    console.log(meliPlusBenefits)
 
     /* TODO: el producto de oferta diaria y la lista deben venir de la base de datos. */
     const demoProduct = allProducts[2]
@@ -33,6 +35,12 @@ function HomePage() {
             <Link to={`/product/${product.id}`} className='offer-product-link' key={product.id}>
                 <Product product={product} showImage containerType='small'/>
             </Link>
+        )
+    })
+
+    const HTMLMeliPlusBenefits = meliPlusBenefits.map(benefit => {
+        return (
+            <BenefitComponent key={benefit.id} benefit={benefit} />
         )
     })
 
@@ -103,7 +111,7 @@ function HomePage() {
 
                         {/* Meli Plus Benefits */}
                         <div className="meli-plus-benefits-container">
-                            
+                            {HTMLMeliPlusBenefits}
                         </div>
                     </div>
                 </section>
