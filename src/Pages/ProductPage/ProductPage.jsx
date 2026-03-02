@@ -27,16 +27,18 @@ function ProductPage() {
 
                             {/* Right column */}
                             <div className="product-page-right-column">
-                                {/* Sección para la información de la compra */}
-                                <div className="buy-info-container">
-                                    <Product product={product} isProductPage/>
-                                </div>
+                                <div className="product-right-column-border">
+                                    {/* Sección para la información de la compra */}
+                                    <div className="buy-info-container">
+                                        <Product product={product} isProductPage/>
+                                    </div>
 
-                                {/* Botones de compra */}
-                                <div className="btns-container">
-                                    {/* Sguramente tenga que envolver cada botón en un link. */}
-                                    <ButtonComponent btn_text="Comprar ahora" btn_type="primary" btn-size="normal"/>
-                                    <ButtonComponent btn_text="Agregar al carrito" btn_type="secondary" btn-size="normal" btn_icon="bi bi-cart2"/>
+                                    {/* Botones de compra */}
+                                    <div className="btns-container">
+                                        {/* Sguramente tenga que envolver cada botón en un link. */}
+                                        <ButtonComponent btn_text="Comprar ahora" btn_type="primary" btn-size="normal"/>
+                                        <ButtonComponent btn_text="Agregar al carrito" btn_type="secondary" btn-size="normal" btn_icon="bi bi-cart2"/>
+                                    </div>
                                 </div>
                             </div>
                         </div>
