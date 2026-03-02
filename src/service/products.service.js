@@ -1,7 +1,11 @@
 import productList from "../fakeDB/productsList";
 
 export const getAllProducts = () => {
-    return productList;
+    const productObject = {
+        products: productList
+    }
+    console.log(productObject);
+    return productObject;
 }
 
 export const getProductById = (id) => {

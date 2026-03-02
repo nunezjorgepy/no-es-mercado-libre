@@ -14,6 +14,13 @@ El disclaimer de que esto NO es mercadolibre. No dejar ninguna información pers
 En el header, usar nav en vez de div (en los links) para mejorar el SEO. Y agregar los links.
 
 # ¿Qué sigue?
+
+============================================================================================================================
+IMPORTANTE:
+Lo que sigue es modificar las funciones de service para que devuelvan objetos y no listas, con las sub-secuentes modificaciones en el resto de los archivos
+============================================================================================================================
+
+
 Sección de las imagenes del producto en la página del mismo.
 
 -----------------------------------------------------------------------------------------------------------------------------

@@ -17,11 +17,10 @@ function HomePage() {
     const allProducts = getAllProducts()
     const meliPlus = getAllMeliPlus()
     const meliPlusBenefits = meliPlus.benefits
-    console.log(meliPlusBenefits)
 
     /* TODO: el producto de oferta diaria y la lista deben venir de la base de datos. */
-    const demoProduct = allProducts[2]
-    const demoList = [allProducts[0], allProducts[1], allProducts[2], allProducts[3]]
+    const demoProduct = allProducts.products[2]
+    const demoList = [allProducts.products[0], allProducts.products[1], allProducts.products[2], allProducts.products[3]]
 
 
     const HTMLHeroOptions = allHeaderOptions.map(headerOption => {
