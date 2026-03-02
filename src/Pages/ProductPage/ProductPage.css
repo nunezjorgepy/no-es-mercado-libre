@@ -8,12 +8,24 @@
 /* 
     TODO: Revisar las medidas correctas en la página de ML
 */
+/* Columna izquierda */
 .product-page-left-column {
     flex-basis: 0%;
     flex-grow: 2;
     flex-shrink: 1;
+    padding-bottom: 40px;
 }
-/* border: 1px solid var(--neutral-010); */
+.gallery-container {
+    position: relative;
+    margin-bottom: 68px;
+    min-height: 504px;
+}
+.product-gallery-position-absolute {
+    position: absolute;
+    margin: 24px 0 0 24px;
+}
+
+/* Columna derecha */
 .product-page-right-column {
     flex-basis: 0%;
     flex-grow: 1;

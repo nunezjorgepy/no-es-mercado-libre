@@ -1,4 +1,12 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css");
+/* Fuente de Mercado Libre */
+@font-face {
+    font-family: 'Proxima Nova';
+    font-weight: 300;
+    font-display: swap;
+    font-style: normal;
+    src: url(https://http2.mlstatic.com/ui/webfonts/v3.0.0/proxima-nova/proximanova-light.woff2) format('woff2'), url(https://http2.mlstatic.com/ui/webfonts/v3.0.0/proxima-nova/proximanova-light.woff) format('woff');
+}
 
 * {
   margin: 0;
@@ -17,6 +25,12 @@ main, section{
 }
 main {
   margin-top: 50px;
+  font-family: Proxima Nova, -apple-system, Roboto, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.35;
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, .1);
 }
 
 /* Universal elements */

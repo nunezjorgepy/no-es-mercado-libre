@@ -10,7 +10,7 @@ function Product(props) {
         - containerType
     */
 
-    const priceToPay = product.price * (1 - product.discount)
+    const priceToPay = (product.price * (1 - product.discount)).toFixed(0)
     const cuotas = ((priceToPay / product.payments) * 1.05).toFixed(2)
 
     const imageClasses = (containerType === 'medium' ? 'object-fit object-fit-medium' : containerType === 'small' ? 'object-fit object-fit-small' : 'object-fit');

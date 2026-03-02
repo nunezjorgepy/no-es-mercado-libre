@@ -11,6 +11,7 @@ El disclaimer de que esto NO es mercadolibre. No dejar ninguna información pers
 - En la sección de ofertas, el botón para moverse entre las opciones fuera de vista. Esto lo dejo para cuando tengas productos que mostrar. (Es lo mismo que el anterior)
 
 -----------------------------------------------------------------------------------------------------------------------------
+En el header, usar nav en vez de div (en los links) para mejorar el SEO. Y agregar los links.
 
 # ¿Qué sigue?
 Sección de las imagenes del producto en la página del mismo.

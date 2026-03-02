@@ -17,11 +17,17 @@ function ProductPage() {
                 <section className="section main-container">
                     <div className="max-width">
                         <div className="flex-row product-flex">
+
                             {/* Left column */}
                             <div className="product-page-left-column">
                                 {/* Sección para el producto */}
-                                <div className="images-container">
-                                    Imágenes
+                                <div className="gallery-container">
+                                    <div className="product-gallery-position-absolute">
+                                        {/* A cada miniatura de las fotos llamarla thumbnail */}
+                                        {/* Para cada <span>, es probable que tenga que agregar un position: relative; */}
+                                        {/* Los thumbnail van a ser componentes. */}
+                                        {/* La funcionalidad va a ser distinta. En vez de hover, uso un boton de tipo radio. Cuando se haga click, se cambia la foto principal. Para eso, usar el pseudo-elemento radio-btn:active */}
+                                    </div>
                                 </div>
                             </div>
 
