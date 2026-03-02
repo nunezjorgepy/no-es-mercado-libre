@@ -9,7 +9,10 @@ export const getAllProducts = () => {
 }
 
 export const getProductById = (id) => {
-    return productList.find(product => product.id === id);
+    const productObject = {
+        product: productList.find(product => product.id === id)
+    }
+    return productObject;
 }
 
 export const sortProductByCriterion = (criterion) => {

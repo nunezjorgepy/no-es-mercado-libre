@@ -8,7 +8,10 @@ import ButtonComponent from '../../components/common/ButtonComponent/ButtonCompo
 function ProductPage() {
 
     const { product_id } = useParams();
-    const product = getProductById(Number(product_id));
+
+    /* TODO: En vez de usar el id, usar el slug */
+    /* Consigo el producto */
+    const product = getProductById(Number(product_id)).product;
 
     return (
         <>
