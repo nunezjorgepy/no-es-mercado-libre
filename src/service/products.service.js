@@ -4,7 +4,7 @@ export const getAllProducts = () => {
     const productObject = {
         products: productList
     }
-    console.log(productObject);
+    
     return productObject;
 }
 
@@ -16,6 +16,11 @@ export const sortProductByCriterion = (criterion) => {
     // Es posible que no sea necesaria, ya que esta el método sort de los arrays.
     // Ordena la lista según el criterio deseado. Pos ahora, la uso para ordenar según el descuento. Si no entiendo mal, esto se puede hacer más fácil en la base de datos.
     return productList.sort((a, b) => b[criterion] - a[criterion]);
+    /* 
+    ================================================================================
+    De usarlo, cambiarlo para que devuelva un objeto y no una lista
+    ================================================================================
+    */
 }
 
 export default {

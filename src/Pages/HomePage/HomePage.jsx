@@ -12,8 +12,8 @@ import BenefitComponent from '../../components/common/BenefitComponent/BenefitCo
 
 function HomePage() {
     /* TODO: pasar esto a una useEffect, usando un useState para cada uno. */
-    const allHeaderOptions = getAllHeaderOptions()
-    const allNovedades = getAllNovedades()
+    const allHeaderOptions = getAllHeaderOptions().headerOptions
+    const allNovedades = getAllNovedades().novedades
     const allProducts = getAllProducts()
     const meliPlus = getAllMeliPlus()
     const meliPlusBenefits = meliPlus.benefits

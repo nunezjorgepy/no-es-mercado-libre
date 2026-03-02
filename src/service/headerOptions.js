@@ -1,7 +1,13 @@
 import headerOptions from "../fakeDB/headerOptions.js";
 
 
-const getAllHeaderOptions = () => headerOptions
+const getAllHeaderOptions = () => {
+    const headerOptionObject = {
+        headerOptions: headerOptions
+    }
+
+    return headerOptionObject
+}
 
 const getOneHeaderOption = (id) => headerOptions.find(headerOption => headerOption.id === id)
 
