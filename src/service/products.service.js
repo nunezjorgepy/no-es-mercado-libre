@@ -2,7 +2,9 @@ import productList from "../fakeDB/productsList";
 
 export const getAllProducts = () => {
     const productObject = {
-        products: productList
+        products: {
+            productList
+        }
     }
     
     return productObject;

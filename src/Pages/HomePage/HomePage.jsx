@@ -12,15 +12,20 @@ import BenefitComponent from '../../components/common/BenefitComponent/BenefitCo
 
 function HomePage() {
     /* TODO: pasar esto a una useEffect, usando un useState para cada uno. */
-    const allHeaderOptions = getAllHeaderOptions().headerOptions
-    const allNovedades = getAllNovedades().novedades
+    const allHeaderOptions = getAllHeaderOptions().headerOptions.headerOptions
+    const allNovedades = getAllNovedades().novedades.mainNovedadesSection
     const allProducts = getAllProducts()
-    const meliPlus = getAllMeliPlus()
+    const meliPlus = getAllMeliPlus().meli
     const meliPlusBenefits = meliPlus.benefits
 
     /* TODO: el producto de oferta diaria y la lista deben venir de la base de datos. */
-    const demoProduct = allProducts.products[2]
-    const demoList = [allProducts.products[0], allProducts.products[1], allProducts.products[2], allProducts.products[3]]
+    const demoProduct = allProducts.products.productList[2]
+    const demoList = [
+                        allProducts.products.productList[0], 
+                        allProducts.products.productList[1], 
+                        allProducts.products.productList[2], 
+                        allProducts.products.productList[3]
+                    ]
 
 
     const HTMLHeroOptions = allHeaderOptions.map(headerOption => {
