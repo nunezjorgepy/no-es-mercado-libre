@@ -20,7 +20,7 @@ EL icon de mercado libre en la pestaña.
 El título de la página según cuál sea (producto, home, perfil, etc.)
 
 -----------------------------------------------------------------------------------------------------------------------------
-
+Crear un componente en caso de que el producto no exista en la página del producto.
 
 # ¿Qué sigue?
 

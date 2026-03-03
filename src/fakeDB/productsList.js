@@ -37,27 +37,41 @@ const productList = [
         ],
         category: "juguetes",
         stock: 10,
-        characteristics: {
-            main: {
-                marca: "Genérica",
-                fabricante: '3D',
-                línea: "Resident Evil",
-                colección: "Resident Evil",
-                modelo: "Jill Valentine",
+        characteristics: [
+            {
+                title: 'Características principales',
+                data: [
+                    ['Marca', 'Genérica'],
+                    ['Fabricante', '3D'],
+                    ['Línea', 'Resident Evil'],
+                    ['Colección', 'Resident Evil'],
+                    ['Modelo', 'Jill Valentine'],
+                ]
             },
-            dimensiones: {
-                ancho: 30,
-                profundidad: 30,
-                altura: 30,
+            {
+                title: 'Dimensiones',
+                data: [
+                    ['Ancho', 30],
+                    ['Profundidad', 30],
+                    ['Altura', 30],
+                ]
             },
-            peso: 300,
-            otros: {
-                minimum_age: 12,
-                materials: 'Plástico',
-                colectable: true,
-                needs_power: false
+            {
+                title: 'Peso',
+                data: [
+                    ['Peso', 300],
+                ]
+            },
+            {
+                title: 'Otros',
+                data: [
+                    ['Edad recomendada', 12],
+                    ['Materiales', 'Plástico'],
+                    ['Colectable', true],
+                    ['Necesita energía', false],
+                ]
             }
-        }
+        ]
     },
     /* ------------------- Second Product ------------------- */
     {
@@ -126,20 +140,26 @@ Garantía de fábrica: 30 días`,
         ],
         category: 'coches',
         stock: 5,
-        characteristics: {
-            main: {
-                marca: 'Genérica',
-                piece_number: 'Cinturon Inercial 3 puntos x2',
-                color: 'Negro'
+        characteristics: [
+            {
+                title: 'Características principales',
+                data: [
+                    ['Marca', 'Genérica'],
+                    ['Pieza', 'Cinturon Inercial 3 puntos x2'],
+                    ['Color', 'Negro']
+                ],
             },
-            otros: {
-                configuration: '3 puntos',
-                type: 'Inercial Retáctil',
-                largo: 300,
-                ancho: 4.8,
-                origin: 'China'
+            {
+                title: 'Otros',
+                data: [
+                    ['Configuración', '3 puntos'],
+                    ['Tipo', 'Inercial Retáctil'],
+                    ['Largo', 300],
+                    ['Ancho', 4.8],
+                    ['Origen', 'China']
+                ],
             }
-        }
+        ]
     },
     /* ------------------- Third Product ------------------- */
     {
@@ -176,21 +196,28 @@ TODAS LAS FOTOS SON REALES`,
         ],
         category: 'coches',
         stock: 15,
-        characteristics: {
-            main: {
-                marca: 'Genérica',
-                piece_number: 'Cinturon Inercial 3 puntos x2',
-                color: 'Negro'
+        characteristics: [
+            {
+                title: 'Características principales',
+                data: [
+                    ['Marca', 'Genérica'],
+                    ['Número de pieza', 'Cinturon Inercial 3 puntos x2'],
+                    ['Color', 'Negro']
+                ]
             },
-            otros: {
-                configuration: 'Dos piezas',
-                type: 'Inercial 3 Puntos',
-                largo: 320,
-                ancho: 4.7,
-                origin: 'China'
+            {
+                title: 'Otros',
+                data: [
+                    ['Configuración', '3 puntos'],
+                    ['Tipo', 'Inercial Retáctil'],
+                    ['Largo', 320],
+                    ['Ancho', 4.7],
+                    ['Origen', 'China']
+                ]
             }
-        }
+        ]
     },
+
     {
         id: 4,
         seller_id: 1,
@@ -211,14 +238,17 @@ TODAS LAS FOTOS SON REALES`,
         ],
         category: 'home',
         stock: 10,
-        characteristics: {
-            otros: {
-                gamer: false,
-                giratoria: true,
-                respaldo_reclinable: false,
-                altura_regulable: true,
-            },
-        }
+        characteristics: [
+            {
+                title: 'Otros',
+                data: [
+                    ['Gamer', false],
+                    ['Giratoria', true],
+                    ['Respaldo reclinable', false],
+                    ['Altura regulable', true],
+                ]
+            }
+        ]
     }
 ]
 
