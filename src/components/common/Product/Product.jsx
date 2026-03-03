@@ -39,7 +39,7 @@ function Product(props) {
             <div className="product-price-divider">
                 {/* Precio del producto */}
                 <div className="product-real-price">
-                    {product.discount ? <span>$ ${product.price}</span> : ''}
+                    {product.discount ? <span>$ {product.price}</span> : ''}
                 </div>
 
                 {/* Precio del producto con descuento */}

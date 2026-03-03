@@ -17,7 +17,16 @@ En el header, usar nav en vez de div (en los links) para mejorar el SEO. Y agreg
 
 ============================================================================================================================
 IMPORTANTE:
-Lo que sigue es modificar las funciones de service para que devuelvan objetos y no listas, con las sub-secuentes modificaciones en el resto de los archivos
+Una vez más, me conviene modificar lo que devuelve los service. DEberia ser así:
+
+const returnObject = {
+    data: {
+        dataList
+    }
+}
+return returnObject
+
+Tener en cuenta que al modificar esto también tengo que modificar los archivos que usan estos objetos.
 ============================================================================================================================
 
 
