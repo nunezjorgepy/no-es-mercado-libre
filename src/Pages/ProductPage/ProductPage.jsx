@@ -4,6 +4,7 @@ import Product from '../../components/common/Product/Product'
 import { getProductById } from '../../service/products.service.js'
 import { useParams } from 'react-router';
 import ButtonComponent from '../../components/common/ButtonComponent/ButtonComponent.jsx';
+import GalleryThumbnail from '../../components/common/GalleryThumbnail/GalleryThumbnail.jsx';
 
 function ProductPage() {
 
@@ -12,6 +13,13 @@ function ProductPage() {
     /* TODO: En vez de usar el id, usar el slug */
     /* Consigo el producto */
     const product = getProductById(Number(product_id)).product;
+
+    const HTMLGalleryThumbnail = product.images.map(image => {
+        const imageIndex = product.images.indexOf(image);
+        return (
+            <GalleryThumbnail image={image} imageIndex={imageIndex} key={imageIndex} />
+        )
+    })
 
     return (
         <>
@@ -30,6 +38,7 @@ function ProductPage() {
                                         {/* Para cada <span>, es probable que tenga que agregar un position: relative; */}
                                         {/* Los thumbnail van a ser componentes. */}
                                         {/* La funcionalidad va a ser distinta. En vez de hover, uso un boton de tipo radio. Cuando se haga click, se cambia la foto principal. Para eso, usar el pseudo-elemento radio-btn:active */}
+                                        {HTMLGalleryThumbnail}
                                     </div>
                                 </div>
                             </div>
